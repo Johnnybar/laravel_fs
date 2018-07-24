@@ -26,7 +26,7 @@
   </form>
 
   <!-- //echoing out all errors in page -->
-@include ('layouts.erros')
+@include ('layouts.errors')
 
 
 @endsection
