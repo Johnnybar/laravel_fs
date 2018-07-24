@@ -1,5 +1,7 @@
 
+
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -28,16 +30,10 @@
     <div class="row">
       <div class="col-md-8 blog-main">
         @yield('content')
-        @foreach ($posts as $post)
 
-        @include('posts.post')
-
-        @endforeach
 
         <h3 class="pb-3 mb-4 font-italic border-bottom">
         </h3>
-
-
 
         <nav class="blog-pagination">
           <a class="btn btn-outline-primary" href="#">Older</a>
@@ -46,8 +42,6 @@
 
       </div><!-- /.blog-main -->
       @include('layouts.sidebar')
-
-
 
     </div><!-- /.row -->
 
