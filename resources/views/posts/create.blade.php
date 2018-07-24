@@ -3,7 +3,7 @@
 
 
 @section ('content')
-<div class="col-sm-7">
+
 
   <h1>Create a post</h1>
 
@@ -28,6 +28,5 @@
   <!-- //echoing out all errors in page -->
 @include ('layouts.erros')
 
-</div>
 
 @endsection
