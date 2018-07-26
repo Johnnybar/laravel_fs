@@ -8,7 +8,7 @@ class PostController extends Controller
 {
   public function index(){
 
-    $posts = Post::latest(); //'oldest' for ascending order
+    $posts = Post::latest() //'oldest' for ascending order
 
     ->filter(request(['month', 'year']))
 
