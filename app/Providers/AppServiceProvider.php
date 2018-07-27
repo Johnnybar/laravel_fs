@@ -13,7 +13,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('layouts.sidebar', function ($view){ //bind the variable archives to the view
+          //so we will have access to this variable and be able to run this method globally
+
+          $view->with('archives', \App\Post::archives());
+
+        });
     }
 
     /**
