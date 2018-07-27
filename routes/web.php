@@ -24,7 +24,7 @@
 //     return view('welcome', compact('name', 'age','tasks'));
 // });
 
-
+$stripe = resolve('App\Billing\Stripe');
 
 
 Route::get('/tasks', 'TasksController@index');
