@@ -6,7 +6,9 @@ use Carbon\Carbon;
 
 class PostController extends Controller
 {
-  public function index(){
+  public function index(\App\Tag $tag = null){
+
+    return $tag;
 
     $posts = Post::latest() //'oldest' for ascending order
 
